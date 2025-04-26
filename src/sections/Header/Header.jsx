@@ -13,9 +13,9 @@ const Header = () => {
     <header className='header__bg w-full h-screen relative pt-20 '>
         <Navbar/>
         <div className='absolute padding-x inset-0 z-0 bg-black/70 flex flex-col  justify-center items-center'>
-          <div className='text-5xl sm:text-6xl lg:text-8xl w-[15ch] md:w-[15ch] leading-tight uppercase  text-center'>
+          <div className='text-5xl sm:text-6xl lg:text-8xl max-sm:w-full sm:w-[15ch] leading-tight uppercase  text-center'>
             <p className=' text-white font-bold font-cormorant'>THE BEST Catering for:</p>
-            <p className='text-4xl sm:text-5xl lg:text-7xl font-semibold font-alt text-secondary'>
+            <p className='text-2xl sm:text-5xl lg:text-7xl font-semibold font-alt text-secondary'>
               <TypeAnimation
                 sequence={[
                   'Small Gatherings', // Types 'One'
