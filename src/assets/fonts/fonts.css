@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+@font-face {
+
+    font-family: 'logo';
+    src: url('/logo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

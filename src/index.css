@@ -1,0 +1,96 @@
+@import './assets/fonts/fonts.css';
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body.modal-open {
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+@layer components{
+
+  .logo__container{
+
+      @apply flex items-center cursor-pointer;
+    
+  }
+
+  .logo__container:hover {
+      filter: drop-shadow(0 0 2rem #646cffaa);
+    }
+
+  .btn{
+
+    @apply px-6 py-3 rounded-xl text-base text-center;
+
+  }
+  
+
+  .navbar{
+
+    @apply fixed top-0 inset-x-0 z-10 flex justify-between items-center shadow-md bg-white;
+  }
+
+
+  .nav-links{
+
+    @apply hidden md:flex gap-7 font-normal items-center mt-2   transition-all;
+  }
+
+  .nav-link{
+
+    @apply  text-primary font-alt decoration-2
+            hover:text-secondary hover:underline 
+              underline-offset-8 transition-all duration-200;
+
+  }
+
+  .nav-close-icon{
+
+    @apply absolute z-20 top-7 right-3 sm:right-7 sm:text-white text-primary cursor-pointer;
+  }
+
+  .nav-links-sm{
+
+    @apply  fixed z-10 top-0 left-0 h-full w-full sm:w-[80%] md:left-[-100%] flex flex-col font-normal items-center sm:items-start pb-5 bg-primary;
+  }
+
+  .nav-link-sm{
+
+    @apply  w-full text-center sm:text-left sm:px-7 font-normal items-center py-5 text-white 
+          hover:bg-secondary cursor-pointer transition-all duration-300;
+  }
+
+
+    
+}
+
+@layer utilities{
+
+  .navbar--isScrolled{
+
+    @apply fixed top-0 inset-x-0 z-10 flex justify-between items-center bg-transparent;
+  }
+
+  
+  .nav-link--isScrolled{
+
+    @apply  text-secondary font-alt decoration-2
+            hover:text-white hover:underline 
+              underline-offset-8 transition-all duration-200;
+
+  }
+
+  .padding-x{
+
+    @apply px-7 max-sm:px-3;
+  }
+}

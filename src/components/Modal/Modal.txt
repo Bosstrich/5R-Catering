@@ -1,0 +1,21 @@
+import React from 'react'
+import ReactDOM from 'react-dom';
+import { motion } from "motion/react"
+
+const Modal = ({showModal, closeModal, children}) => {
+
+  return ReactDOM.createPortal (
+
+    <div className={`${showModal ? 'opacity-100 fixed inset-0 bg-black/60 z-10 no-scrollbar' : 'opacity-0'} duration-300 transition-opacity `}
+         onClick={closeModal}
+    >
+      <div className={`fixed inset-0 flex justify-center items-center duration-500 ease-in-out transition-transform ${showModal ? 'pointer-events-auto translate-y-0' : '-translate-y-1/2 pointer-events-none'}`}
+        >
+            {children}
+        </div>
+    </div>
+    ,document.body
+  )
+}
+
+export default Modal

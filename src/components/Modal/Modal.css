@@ -1,0 +1,35 @@
+/* Backdrop animations */
+.modal-backdrop-enter {
+    opacity: 0;
+  }
+  .modal-backdrop-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+  .modal-backdrop-exit {
+    opacity: 1;
+  }
+  .modal-backdrop-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  
+  /* Content animations */
+  .modal-content-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  .modal-content-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .modal-content-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .modal-content-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }

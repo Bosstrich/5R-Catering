@@ -1,0 +1,9 @@
+.Menu-bg{
+
+    background-image: url('../../assets/menu-head.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+}
